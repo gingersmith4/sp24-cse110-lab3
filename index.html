@@ -80,7 +80,66 @@
             <source src="/assets/lab2_110_audio.m4a" type="audio/mpeg">
         </audio>
 
+
+        <h2>Get a recipe recomendation by filling out this form!</h2>
+        <form>
+            <fieldset>
+                <!-- Text input-->
+                <label for="snack">Your favorite snack:</label>
+                <input type="text" id="snack" name="user_snack"><br><br>
+                <!-- Radio buttons-->
+                <label for="diet">What kind of food do you eat?</label><br>
+                <input type="radio" id="vegan" name="user_diet">
+                <label for="vegan">Vegan</label><br>
+                <input type="radio" id="veg" name="user_diet">
+                <label for="veg">Vegetarian</label><br>
+                <input type="radio" id="pesc" name="user_diet">
+                <label for="pesc">Pescitarian</label><br>
+                <input type="radio" id="carn" name="user_diet">
+                <label for="carn">Carnivore</label><br>
+                <!-- Checkbox-->
+                <label for="habits">Which best describes you?</label><br>
+                <input type="checkbox" name="out">
+                <label for="out"> I eat out a lot</label><br>
+                <input type="checkbox" name="incook">
+                <label for="incook"> I cook a lot</label><br>
+                <input type="checkbox" name="in">
+                <label for="in"> I heat up food at home</label><br>
+                <!-- Date-->
+                <label for="date">When do you want to make the recipe?</label><br>
+                <input type="date"><br>
+                <!-- Text Area 
+                The size of a text area is specified by the cols and rows attributes (or with CSS).
+                -->
+                <label for="fave">Describe your favorite thing to cook!</label><br>
+                <textarea id="fave" name="recipe" rows="5" cols="100">
+                    Include details like the ingredients and tools you use.
+                </textarea>     
+                <!-- Datalist-->
+                <label for="flavor">Choose your preferred flavor palette from the list:</label>
+                    <input list="flavors" name="flabor" id="flavor">
+                    <datalist id="flavors">
+                        <option value="Sweet">
+                        <option value="Salty">
+                        <option value="Spicy">
+                    </datalist>
+                <br>
+                <!-- Select, option -->
+                <label for="people">Choose who you will be cooking for:</label>
+                <select name="people" id="people">
+                    <option value="me">Me</option>
+                    <option value="us">Me and one other person</option>
+                    <option value="group">Three or more people</option>
+                </select>
+                <br>
+                <!--Button-->
+                <button type="button">Click to submit your responses!</button>
+                <br>
+            </fieldset>
+        </form>
+
         <hr>
+
     </main>
     <footer>
         <a href="https://canvas.ucsd.edu/courses/54609/assignments/778836">Canvas Page</a>
