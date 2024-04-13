@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset = "UTF-8" />
+    <meta charset = "UTF-8">
     <title>CSE 110 Lab 2 Meeting</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -42,14 +42,14 @@
             <h2 id="business">Business</h2>
             <h3>Unfinished Business</h3>
             <ol>
-                <li><input type="checkbox" />Check grade for lab 1</li>
-                <li><input type="checkbox" />Reflect on learnings from lab 1</li>
+                <li><input type="checkbox">Check grade for lab 1</li>
+                <li><input type="checkbox">Reflect on learnings from lab 1</li>
             </ol>
             <h3>New Business</h3>
             <ol>
-                <li><input type="checkbox" />Review lecture 3</li>
-                <li><input type="checkbox" />Plan time to meet with team 19</li>
-                <li><input type="checkbox" />Comments, questions, concerns</li>
+                <li><input type="checkbox">Review lecture 3</li>
+                <li><input type="checkbox">Plan time to meet with team 19</li>
+                <li><input type="checkbox">Comments, questions, concerns</li>
 
             </ol>
         </section>
@@ -61,7 +61,7 @@
                 <br>There could also be an architecture diagram or anything else that was presented.
             </p>
             <img src="/assets/iceberg_model.jpeg" alt="Drawing of an iceberg to 
-            explain software engineering" width=40% height=40%>
+            explain software engineering" width=200 height=100>
             <details>
                 <summary>Iceberg Model</summary>
                 <p>Users see and interact with the UI, so that should be the first part we work on for a project!</p>
@@ -71,7 +71,7 @@
 
         <h2 id="recording">Recording</h2>
         <h3>Watch a video recording of the meeting:</h3>
-        <video width=50% height=50% controls>
+        <video width=400 height=200 controls>
             <source src="/assets/lab2_110_video.mp4">
         </video>
 
@@ -88,7 +88,7 @@
                 <label for="snack">Your favorite snack:</label>
                 <input type="text" id="snack" name="user_snack"><br><br>
                 <!-- Radio buttons-->
-                <label for="diet">What kind of food do you eat?</label><br>
+                <label>What kind of food do you eat?</label><br>
                 <input type="radio" id="vegan" name="user_diet">
                 <label for="vegan">Vegan</label><br>
                 <input type="radio" id="veg" name="user_diet">
@@ -96,17 +96,18 @@
                 <input type="radio" id="pesc" name="user_diet">
                 <label for="pesc">Pescitarian</label><br>
                 <input type="radio" id="carn" name="user_diet">
-                <label for="carn">Carnivore</label><br>
+                <label for="carn">Carnivore</label>
+                <br>
                 <!-- Checkbox-->
-                <label for="habits">Which best describes you?</label><br>
-                <input type="checkbox" name="out">
+                <label>Which best describes you?</label><br>
+                <input type="checkbox" id="out" name="habits">
                 <label for="out"> I eat out a lot</label><br>
-                <input type="checkbox" name="incook">
+                <input type="checkbox" id ="incook" name="habits">
                 <label for="incook"> I cook a lot</label><br>
-                <input type="checkbox" name="in">
+                <input type="checkbox" id="in" name="habits">
                 <label for="in"> I heat up food at home</label><br>
                 <!-- Date-->
-                <label for="date">When do you want to make the recipe?</label><br>
+                <label>When do you want to make the recipe?</label><br>
                 <input type="date"><br>
                 <!-- Text Area 
                 The size of a text area is specified by the cols and rows attributes (or with CSS).
