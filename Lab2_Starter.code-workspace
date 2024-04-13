@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Lab2_Starter",
+			"path": "."
+		},
+		{
+			"name": "favicon_io",
+			"path": "../../../Downloads/favicon_io"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lab2_Starter"
+	}
+}
