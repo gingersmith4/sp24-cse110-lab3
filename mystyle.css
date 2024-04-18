@@ -3,6 +3,9 @@ body {
     background-color: lightblue;
   }
   h1 {
+    /*CSS Variables & Fallbacks*/
+    --box-color: aquamarine;
+    background-color: var(--box-color, lightgreen);
     /*color: navy;*/
     margin-left: 20px;
     text-align: center;
