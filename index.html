@@ -108,31 +108,42 @@
         <h2>Get a recipe recomendation by filling out this form!</h2>
         <form>
             <fieldset>
-                <!-- Text input-->
-                <label for="snack">Your favorite snack:</label>
-                <input type="text" id="snack" name="user_snack"><br><br>
-                <!-- Radio buttons-->
-                <label>What kind of food do you eat?</label><br>
-                <input type="radio" id="vegan" name="user_diet">
-                <label for="vegan">Vegan</label><br>
-                <input type="radio" id="veg" name="user_diet">
-                <label for="veg">Vegetarian</label><br>
-                <input type="radio" id="pesc" name="user_diet">
-                <label for="pesc">Pescitarian</label><br>
-                <input type="radio" id="carn" name="user_diet">
-                <label for="carn">Carnivore</label>
+                <div id="q1">
+                    <!-- Text input-->
+                    <label for="snack">Your favorite snack:</label>
+                    <input type="text" id="snack" name="user_snack">
+                </div>
                 <br>
-                <!-- Checkbox-->
-                <label>Which best describes you?</label><br>
-                <input type="checkbox" id="out" name="habits">
-                <label for="out"> I eat out a lot</label><br>
-                <input type="checkbox" id ="incook" name="habits">
-                <label for="incook"> I cook a lot</label><br>
-                <input type="checkbox" id="in" name="habits">
-                <label for="in"> I heat up food at home</label><br>
-                <!-- Date-->
-                <label>When do you want to make the recipe?</label><br>
-                <input type="date"><br>
+                <div id="q2">
+                    <!-- Radio buttons-->
+                    <label>What kind of food do you eat?</label><br>
+                    <input type="radio" id="vegan" name="user_diet">
+                    <label for="vegan">Vegan</label><br>
+                    <input type="radio" id="veg" name="user_diet">
+                    <label for="veg">Vegetarian</label><br>
+                    <input type="radio" id="pesc" name="user_diet">
+                    <label for="pesc">Pescitarian</label><br>
+                    <input type="radio" id="carn" name="user_diet">
+                    <label for="carn">Carnivore</label>
+                </div>
+                <br>
+                <div id="q3">
+                    <!-- Checkbox-->
+                    <label>Which best describes you?</label><br>
+                    <input type="checkbox" id="out" name="habits">
+                    <label for="out"> I eat out a lot</label><br>
+                    <input type="checkbox" id ="incook" name="habits">
+                    <label for="incook"> I cook a lot</label><br>
+                    <input type="checkbox" id="in" name="habits">
+                    <label for="in"> I heat up food at home</label>
+                </div>
+                <br>
+                <div id="q4">
+                    <!-- Date-->
+                    <label>When do you want to make the recipe?</label><br>
+                    <input type="date">
+                </div>
+                <br>
                 <!-- Text Area 
                 The size of a text area is specified by the cols and rows attributes (or with CSS).
                 -->

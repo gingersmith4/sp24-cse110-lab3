@@ -37,7 +37,9 @@ nav {
     color: #1a6685;
     text-decoration-line: overline underline;
     text-decoration-style: double;
-    border:2px solid Violet;
+    border:5px solid Violet;
+    margin: 5px;
+    padding: 10px;
 }
 diagramInfo {
     color: rec2020(34% 58% 73% / 50%);
@@ -59,4 +61,26 @@ diagramInfo {
   button {
     height: 1cm;
     width: 2in;
+  }
+  #q1{
+    border:5px solid Violet;
+    margin: 30px;
+    padding: 10px;
+  }
+  #q2{
+    border:5px solid Violet;
+    margin: 0px;
+    padding: 50px;
+  }
+  #q3{
+    /* Longhand */
+    margin-top: 10px;
+    padding-left: 5px;
+    
+  }
+  #q4{
+    /* Shorthand */
+    margin: 25px 50px 75px 100px;
+    padding: 25px 50px 75px 100px;
+    
   }
