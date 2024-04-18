@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset = "UTF-8">
-    <title>CSE 110 Lab 2 Meeting</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jersey 10 Charted">  
-</head>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CSE 110 Lab 2 Meeting</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jersey 10 Charted">  
+        <!-- Internal CSS, defined in head -->
+        <style> 
+            h2 {
+              background-color: linen;
+            }
+        </style>
+    </head>
  <!-- W3 schools alphabet of tags (helpful link!) 
     https://www.w3schools.com/tags/tag_br.asp -->
   <body>
@@ -54,16 +61,31 @@
                 <li><input type="checkbox">Comments, questions, concerns</li>
 
             </ol>
+            <br>
+
+            <div id="notes">
+            <p style="line-height: 2em">
+                We can include lots of notes from the meeting, and style them to look like
+                notebook paper! I like this because it is reminiscent of handwritten notes,
+                even though this entire project has been done on a computer. 
+                This section actually took a lot of time for me to troubleshoot, 
+                I used the <strong>CSS values and units</strong> page on MDN Web Docs, and asked ChatGPT
+                what the different parts of the html do.
+              </p>
+            </div>
+              
+        
         </section>
 
         <h2 id="diagrams">Diagrams</h2>
         <div class="diagramInfo">
             <p>In this section I can upload pictures of the 
+                <!-- Inline CSS -->
                 <span style="color:blue">whiteboard or any other kind of drawing.</span>
                 <br>There could also be an architecture diagram or anything else that was presented.
             </p>
             <img src="/assets/iceberg_model.jpeg" alt="Drawing of an iceberg to 
-            explain software engineering" width=200 height=100>
+            explain software engineering">
             <details>
                 <summary>Iceberg Model</summary>
                 <p>Users see and interact with the UI, so that should be the first part we work on for a project!</p>
@@ -73,7 +95,7 @@
 
         <h2 id="recording">Recording</h2>
         <h3>Watch a video recording of the meeting:</h3>
-        <video width=400 height=200 controls>
+        <video controls>
             <source src="/assets/lab2_110_video.mp4">
         </video>
 

@@ -3,13 +3,14 @@ body {
     background-color: lightblue;
   }
   h1 {
+    /*CSS Variables & Fallbacks*/
+    --box-color: aquamarine;
+    background-color: var(--box-color, lightgreen);
     /*color: navy;*/
     margin-left: 20px;
     text-align: center;
     font-family: "Jersey 10 Charted";
     font-size: 90px;
-
-
   }
   h2{
     color: color-mix(in lch, rgb(81, 56, 81) 40%, navy);
@@ -41,3 +42,21 @@ nav {
 diagramInfo {
     color: rec2020(34% 58% 73% / 50%);
 }
+#notes {
+    margin: 0;
+    background-image: repeating-linear-gradient(
+      to top,
+      rgb(42, 147, 213) 0 2px,
+      linen 0 2lh
+    );
+  }
+  video {
+    width: 50vw;
+  }
+  img {
+    height: 30vh;
+  }
+  button {
+    height: 1cm;
+    width: 2in;
+  }
