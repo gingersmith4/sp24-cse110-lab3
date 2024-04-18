@@ -1,0 +1,12 @@
+/* Used template from W3 schools */
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+nav {
+    background-color: rgb(204, 173, 230);
+}
