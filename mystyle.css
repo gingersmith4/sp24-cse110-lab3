@@ -54,9 +54,12 @@ diagramInfo {
   }
   video {
     width: 50vw;
+    max-width: 500px;
+    min-width: 50px;
   }
   img {
     height: 30vh;
+    min-height: 120px;
   }
   button {
     height: 1cm;
@@ -76,11 +79,18 @@ diagramInfo {
     /* Longhand */
     margin-top: 10px;
     padding-left: 5px;
+    border-width: 1px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: black;
     
   }
   #q4{
     /* Shorthand */
     margin: 25px 50px 75px 100px;
     padding: 25px 50px 75px 100px;
+    border-top: 1px solid black;
+
     
   }
