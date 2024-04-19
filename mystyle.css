@@ -37,7 +37,9 @@ nav {
     color: #1a6685;
     text-decoration-line: overline underline;
     text-decoration-style: double;
-    border:2px solid Violet;
+    border:5px solid Violet;
+    margin: 5px;
+    padding: 10px;
 }
 diagramInfo {
     color: rec2020(34% 58% 73% / 50%);
@@ -52,11 +54,55 @@ diagramInfo {
   }
   video {
     width: 50vw;
+    max-width: 500px;
+    min-width: 50px;
   }
   img {
     height: 30vh;
+    min-height: 120px;
   }
   button {
     height: 1cm;
     width: 2in;
+  }
+  #q1{
+    display: inline;
+    border:5px solid Violet;
+    margin: 10px;
+    padding: 10px;
+  }
+  #q2{
+    display: none;
+    border:5px solid Violet;
+    margin: 0px;
+    padding: 50px;
+  }
+  #q3{
+    display: block;
+    /* Longhand */
+    margin-top: 10px;
+    padding-left: 5px;
+    border-width: 1px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: black;
+    
+  }
+  #q4{
+    display: inline;
+
+    /* Shorthand: top, right, bottom, left */
+    margin: 55px 5px 100px 10px;
+    padding: 10px 50px 105px 100px;
+    border-top: 1px solid black;
+  }
+  #q5{
+    display: inline-block;
+  }
+  #q6{
+    display: block;
+  }
+  #q7{
+    display: inline-block;
   }
