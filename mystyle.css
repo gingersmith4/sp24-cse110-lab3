@@ -66,16 +66,19 @@ diagramInfo {
     width: 2in;
   }
   #q1{
+    display: inline;
     border:5px solid Violet;
-    margin: 30px;
+    margin: 10px;
     padding: 10px;
   }
   #q2{
+    display: none;
     border:5px solid Violet;
     margin: 0px;
     padding: 50px;
   }
   #q3{
+    display: block;
     /* Longhand */
     margin-top: 10px;
     padding-left: 5px;
@@ -87,10 +90,19 @@ diagramInfo {
     
   }
   #q4{
-    /* Shorthand */
-    margin: 25px 50px 75px 100px;
-    padding: 25px 50px 75px 100px;
-    border-top: 1px solid black;
+    display: inline;
 
-    
+    /* Shorthand: top, right, bottom, left */
+    margin: 55px 5px 100px 10px;
+    padding: 10px 50px 105px 100px;
+    border-top: 1px solid black;
+  }
+  #q5{
+    display: inline-block;
+  }
+  #q6{
+    display: block;
+  }
+  #q7{
+    display: inline-block;
   }

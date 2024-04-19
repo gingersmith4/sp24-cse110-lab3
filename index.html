@@ -110,13 +110,13 @@
             <fieldset>
                 <div id="q1">
                     <!-- Text input-->
-                    <label for="snack">Your favorite snack:</label>
+                    <label for="snack">1 Your favorite snack:</label>
                     <input type="text" id="snack" name="user_snack">
                 </div>
                 <br>
                 <div id="q2">
                     <!-- Radio buttons-->
-                    <label>What kind of food do you eat?</label><br>
+                    <label>2 What kind of food do you eat?</label><br>
                     <input type="radio" id="vegan" name="user_diet">
                     <label for="vegan">Vegan</label><br>
                     <input type="radio" id="veg" name="user_diet">
@@ -129,7 +129,7 @@
                 <br>
                 <div id="q3">
                     <!-- Checkbox-->
-                    <label>Which best describes you?</label><br>
+                    <label>3 Which best describes you?</label><br>
                     <input type="checkbox" id="out" name="habits">
                     <label for="out"> I eat out a lot</label><br>
                     <input type="checkbox" id ="incook" name="habits">
@@ -140,34 +140,40 @@
                 <br>
                 <div id="q4">
                     <!-- Date-->
-                    <label>When do you want to make the recipe?</label><br>
+                    <label>4 When do you want to make the recipe?</label>
                     <input type="date">
                 </div>
                 <br>
                 <!-- Text Area 
                 The size of a text area is specified by the cols and rows attributes (or with CSS).
                 -->
-                <label for="fave">Describe your favorite thing to cook!</label><br>
-                <textarea id="fave" name="recipe" rows="5" cols="100">
-                    Include details like the ingredients and tools you use.
-                </textarea>  
+                <div id="q5">
+                    <label for="fave">5 Describe your favorite thing to cook!</label><br>
+                    <textarea id="fave" name="recipe" rows="5" cols="100">
+                        Include details like the ingredients and tools you use.
+                    </textarea> 
+                </div> 
                 <br>
-                <!-- Datalist-->
-                <label for="flavor">Choose your preferred flavor palette from the list:</label>
+                <div id="q6">
+                    <!-- Datalist-->
+                    <label for="flavor">6 Choose your preferred flavor palette from the list:</label>
                     <input list="flavors" name="flabor" id="flavor">
                     <datalist id="flavors">
                         <option value="Sweet">
                         <option value="Salty">
                         <option value="Spicy">
                     </datalist>
+                </div>
                 <br>
-                <!-- Select, option -->
-                <label for="people">Choose who you will be cooking for:</label>
-                <select name="people" id="people">
-                    <option value="me">Me</option>
-                    <option value="us">Me and one other person</option>
-                    <option value="group">Three or more people</option>
-                </select>
+                <div id="q7">
+                    <!-- Select, option -->
+                    <label for="people">7 Choose who you will be cooking for:</label>
+                    <select name="people" id="people">
+                        <option value="me">Me</option>
+                        <option value="us">Me and one other person</option>
+                        <option value="group">Three or more people</option>
+                    </select>
+                </div>
                 <br>
                 <!--Button-->
                 <button type="button">Click to submit your responses!</button>
