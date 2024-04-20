@@ -1,32 +1,115 @@
 /* Used template from W3 schools */
 body {
     background-color: lightblue;
-  }
-  h1 {
-    /*CSS Variables & Fallbacks*/
-    --box-color: aquamarine;
-    background-color: var(--box-color, lightgreen);
-    /*color: navy;*/
-    margin-left: 20px;
-    text-align: center;
-    font-family: "Jersey 10 Charted";
-    font-size: 90px;
-  }
-  h2{
-    color: color-mix(in lch, rgb(81, 56, 81) 40%, navy);
-
-  }
-  h3{
-    text-decoration-line: overline underline;
-    text-decoration-color: purple;
-    text-decoration-style: wavy;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-  }
-nav {
-    background-color: rgb(204, 173, 230);
 }
+h1 {
+  /*CSS Variables & Fallbacks*/
+  --box-color: aquamarine;
+  background-color: var(--box-color, lightgreen);
+  /*color: navy;*/
+  margin-left: 20px;
+  text-align: center;
+  font-family: "Jersey 10 Charted";
+  font-size: 90px;
+}
+h2{
+  color: color-mix(in lch, rgb(81, 56, 81) 40%, navy);
+
+}
+h3{
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+  text-decoration-style: wavy;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* based on tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+nav { /* parent (flex container) */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    list-style: none;
+    margin: 0; 
+    background: blue;
+}
+nav a { /* children (flex items) */
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: linen;
+  border: 5px;
+  border-color: linen;
+}
+nav a:hover {
+  background: darkblue;
+}
+@media all and (max-width: 800px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+  nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  nav a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  nav li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+.newB {
+  display: flex;
+  flex-flow: row wrap; /* combines direction and wrap */
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: deepskyblue;
+}
+
+.newB p {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.newB p:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .newB {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .newB {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .newB p { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .newB li:last-of-type p {
+    border-bottom: none;
+  }
+}
+
 #date {
     color: hsl(218, 59%, 29%);
     text-decoration-line: overline underline;
