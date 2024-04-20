@@ -110,6 +110,22 @@ nav a:hover {
   }
 }
 
+/* Based on Fluid columns snippet from https://css-tricks.com/snippets/css/complete-guide-grid/ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  align-items: start;
+}
+.grid > div {
+  background: #d4c0f3;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.grid div:hover {
+  background: #EDE7F6;
+}
+
 #date {
     color: hsl(218, 59%, 29%);
     text-decoration-line: overline underline;
