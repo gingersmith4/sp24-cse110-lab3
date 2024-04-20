@@ -3,6 +3,7 @@ body {
     background-color: lightblue;
 }
 h1 {
+
   /*CSS Variables & Fallbacks*/
   --box-color: aquamarine;
   background-color: var(--box-color, lightgreen);
@@ -25,6 +26,7 @@ h3{
 
 /* based on tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 nav { /* parent (flex container) */
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,6 +132,9 @@ nav a:hover {
     color: hsl(218, 59%, 29%);
     text-decoration-line: overline underline;
     text-decoration-style: dotted;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* sticky needs this line to work */
 
 }
 #business {
@@ -159,6 +164,9 @@ diagramInfo {
   img {
     height: 30vh;
     min-height: 120px;
+    position: relative;
+    left: 30px;
+    border: 4px solid #93d635;
   }
   button {
     height: 1cm;
@@ -205,3 +213,4 @@ diagramInfo {
   #q7{
     display: inline-block;
   }
+ 
