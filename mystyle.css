@@ -1,6 +1,8 @@
 /* Used template from W3 schools */
 body {
     background-color: lightblue;
+    font-size: 20px;
+
 }
 h1 {
 
@@ -13,7 +15,7 @@ h1 {
   font-family: "Jersey 10 Charted";
   font-size: 90px;
 }
-h2{
+h2, h3{
   color: color-mix(in lch, rgb(81, 56, 81) 40%, navy);
 
 }
@@ -27,14 +29,14 @@ h3{
 /* based on tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 nav { /* parent (flex container) */
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-    list-style: none;
-    margin: 0; 
-    background: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: blue;
 }
 nav a { /* children (flex items) */
   text-decoration: none;
@@ -96,6 +98,7 @@ nav a:hover {
   }
 }
 
+/* Extra small devices (phones, 600px and down) */
 @media all and (max-width: 600px) {
   .newB {
     flex-flow: column wrap;
@@ -109,6 +112,12 @@ nav a:hover {
   }
   .newB li:last-of-type p {
     border-bottom: none;
+  }
+
+  form {
+    font-size: 30px;
+    background-color: linen;
+
   }
 }
 
@@ -145,7 +154,7 @@ nav a:hover {
     margin: 5px;
     padding: 10px;
 }
-diagramInfo {
+#diagramInfo {
     color: rec2020(34% 58% 73% / 50%);
 }
 #notes {
@@ -186,6 +195,10 @@ button:active {
 
 }
 
+input[type="text"] {
+    background-color: yellow;
+}
+
   #q1{
     display: inline;
     border:5px solid Violet;
@@ -221,10 +234,17 @@ button:active {
   #q5{
     display: inline-block;
   }
+  #q5 textarea{
+    font-size: 20px;
+  }
   #q6{
     display: block;
   }
+  
   #q7{
     display: inline-block;
   }
- 
+  * { /* Universal selector */
+    font-size: 20px;
+  }
+  
