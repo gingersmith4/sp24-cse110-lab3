@@ -168,10 +168,24 @@ diagramInfo {
     left: 30px;
     border: 4px solid #93d635;
   }
+  /* active and styling based on https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
   button {
-    height: 1cm;
-    width: 2in;
+    height: 2cm;
+    width: 2.5in;
+    
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
   }
+button:active {
+  box-shadow: 2px 2px 5px #fc894d;
+
+}
+
   #q1{
     display: inline;
     border:5px solid Violet;
