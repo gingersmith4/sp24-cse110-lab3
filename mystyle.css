@@ -256,7 +256,12 @@ input[type="text"] {
     text-decoration-style: double;
   }
  
+  /* resource: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators */
   p.myClass#myId {
     color: rgb(216, 102, 121);
     font-size: 1.5rem;
+  }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
+  h4:has(+ h5) {
+    margin: 0 0 0.25rem 0;
   }
