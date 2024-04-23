@@ -28,7 +28,6 @@ h3{
 
 /* based on tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 nav { /* parent (flex container) */
-    
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -247,4 +246,34 @@ input[type="text"] {
   * { /* Universal selector */
     font-size: 20px;
   }
-  
+  h3 + ol { /* adjacent sibling selector */
+    background-color: rgb(192, 227, 252);
+  }
+
+  h3 ~ ol {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+ 
+  /* resource: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators */
+  p.myClass#myId {
+    color: rgb(216, 102, 121);
+    font-size: 1.5rem;
+  }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
+  h4:has(+ h5) {
+    margin: 0 0 0.25rem 0;
+  }
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector */
+  .example {
+    font-size: 1.2rem;
+    & > a {
+      color: orange;
+      &:hover,
+      &:focus {
+        color: ivory;
+        background-color: tomato;
+      }
+    }
+  }
