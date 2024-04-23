@@ -28,7 +28,6 @@ h3{
 
 /* based on tutorial from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 nav { /* parent (flex container) */
-    
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -264,4 +263,17 @@ input[type="text"] {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
   h4:has(+ h5) {
     margin: 0 0 0.25rem 0;
+  }
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector */
+  .example {
+    font-size: 1.2rem;
+    & > a {
+      color: orange;
+      &:hover,
+      &:focus {
+        color: ivory;
+        background-color: tomato;
+      }
+    }
   }
