@@ -16,7 +16,7 @@ h1 {
   font-size: 90px;
 }
 h2, h3{
-  color: color-mix(in lch, rgb(81, 56, 81) 40%, navy);
+  color: color-mix(lch, rgb(81, 56, 81) 40%, navy);
 
 }
 h3{
@@ -114,7 +114,7 @@ nav a:hover {
   }
 
   form {
-    font-size: 30px;
+    font-size: 1.2rem;
     background-color: linen;
 
   }
@@ -154,7 +154,7 @@ nav a:hover {
     padding: 10px;
 }
 #diagramInfo {
-    color: rec2020(34% 58% 73% / 50%);
+    color: color(srgb .34 .58 .73);
 }
 #notes {
     margin: 0;
